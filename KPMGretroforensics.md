@@ -86,7 +86,7 @@ The wordlist included with the challenge only worked for Saul.jpg, but StegSeek 
 No bueno. Maybe Mike is nothing. 
 
 ***
-### My ears are bleeding
+### And now my ears are bleeding
 The last recovered file we haven't looked at yet is **Theme.mp3**, and we know that data can be hidden in audio files as well as images, so let's give it a listen. 
 
 It starts out sounding like normal music, then in the middle there's a period of loud high-pitched noise. Not exactly subtle, so this must be something. 
@@ -139,7 +139,7 @@ That's a weird name for a manufacturer, and it's got a curly bracket like a flag
 
 ![](screenshots/20230121200235.png)
 
-That's a weird name for a manufacturer, but the file size is pretty big for such a small image. And these 4 rows of pixels at the bottom look weird. What if I open it in a hex editor and look for magic numbers? Or I could use binwalk to look for hidden zip files. Didn't we create a hidden volume inside a file with veracrypt? How did I break a dependency in my VM? The last 3 online stego tools were crap but I bet this one works.   
+That's a weird name for a manufacturer, but the file size is pretty big for such a small image. And these 4 rows of pixels at the bottom look weird. What if I open it in a hex editor and look for magic numbers? Or I could use binwalk to look for hidden zip files. Didn't we create a hidden volume inside a file with veracrypt? How did I break a dependency in my VM!? The last 3 online stego tools were crap but I bet this one works.   
 
 ![](screenshots/20230121200249.png)
 
@@ -150,3 +150,13 @@ There's no way that was just a substitution cipher.
 ***
 ### The Flag 
 #### retroCTF{retro_recovery}
+
+***
+### Lessons Learned
+This was definitely a puzzle-style challenge, but that doesn't mean that the effort in solving it was wasted. It may seem like a gimmick, but [steganography](https://www.bbc.com/news/world-asia-china-64206950) was in the news a few days after the CTF. These are some of my takeaways: 
+- **Tools and Process**. This might have been my first forensics challenge, so while I'd done some of the steps separately before, this was the first time putting it together and the clues helped me get in the right mindset. 
+- **Past experience**. If you think the mp3 section came out of left field, don't feel bad. I had seen a similar challenge once before, and had no clue how to approach it. This time, just that memory was enough to send me down the right search-engine path. 
+- **Enjoy the wild goose chase**. All of the false starts I made trying to find the flag hidden in Mike.jpg are just tools in my toolkit for next time. For example, I was familiar with binwalk but had never used it before, and I just doubled my experience with file-carving, which I'm sure will show up in another challenge soon. 
+- **Don't make it harder than it has to be**. I've heard cybersecurity veterans say that we're essentially solving the same problems today as we were 20 years ago. The flag hidden in the exif data is just a reminder to check the obvious places first. 
+
+Thanks to [Devin](https://github.com/DevinM17/) for creating the challenge and ISSessions for hosting the event.  
