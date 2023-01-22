@@ -122,7 +122,7 @@ Sometimes if I'm feeling lucky, I'll try to install a package in Linux without e
 
 ![](screenshots/20230121194312.png)
 
-There is literally\* (\*not literally) a tool for almost everything and if it's something small and straightforward, the tool is probably just named for thing it does. 
+There is literally\* (\*not literally) a tool for almost everything and if it's something small and straightforward, the tool is probably just named for the thing it does. 
 
 ![](screenshots/20230121194758.png)
 
