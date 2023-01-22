@@ -95,7 +95,7 @@ We open the mp3 in the open-source audio app [Audacity](https://www.audacityteam
 
 ![](screenshots/20230121181454.png)
 
-The figure above shows a standard waveform, but we can also switch the view to Spectogram, which plots each individual frequency of sound on the x-axis over time, and the color represents the amplitude of the signal.  
+The figure above shows a standard waveform, but we can also switch the view to Spectogram, which plots each individual frequency of sound on the y-axis over time, and the color represents the amplitude of the signal.  
 
 ![](screenshots/20230121182839.png)
 
@@ -130,7 +130,7 @@ Great, let's read the EXIF data from **Mike.jpg**
 
 ![](screenshots/20230121195007.png)
 
-That's a weird name for a manufacturer, and it's got a curly bracket like a flag, it can't be a coincidence. That's not an english word though so it must be a substitution cipher that only affects letters. Let's throw it in [CyberChef](https://gchq.github.io/CyberChef/) and try the first thing that comes to mind. 
+That's a weird name for a manufacturer, and it's got a curly bracket like a flag. It can't be a coincidence. That's not an english word though so it must be a substitution cipher that only affects letters. Let's throw it in [CyberChef](https://gchq.github.io/CyberChef/) and try the first thing that comes to mind. 
 
 ![](screenshots/20230121195731.png)
 
@@ -153,7 +153,7 @@ There's no way that was just a substitution cipher.
 
 ***
 ### Lessons Learned
-This was definitely a puzzle-style challenge, but that doesn't mean that the effort in solving it was wasted. It may seem like a gimmick, but [steganography](https://www.bbc.com/news/world-asia-china-64206950) was in the news a few days after the CTF. These are some of my takeaways: 
+This was definitely a puzzle-style challenge, but that doesn't mean that the effort in solving it was wasted. It may seem like a gimmick, but [steganography](https://www.bbc.com/news/world-asia-china-64206950) was in the [news](https://www.bbc.com/news/world-asia-china-64206950) a few days after the CTF. These are some of my takeaways: 
 - **Tools and Process**. This might have been my first forensics challenge, so while I'd done some of the steps separately before, this was the first time putting it together and the clues helped me get in the right mindset. 
 - **Past experience**. If you think the mp3 section came out of left field, don't feel bad. I had seen a similar challenge once before, and had no clue how to approach it. This time, just that memory was enough to send me down the right search-engine path. 
 - **Enjoy the wild goose chase**. All of the false starts I made trying to find the flag hidden in Mike.jpg are just tools in my toolkit for next time. For example, I was familiar with binwalk but had never used it before, and I just doubled my experience with file-carving, which I'm sure will show up in another challenge soon. 
