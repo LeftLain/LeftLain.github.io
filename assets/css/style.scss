@@ -128,7 +128,13 @@ h3 {
   font-size: 2rem;
   margin-top: 3rem;
 }
-
+.markdown-body h3 {
+  font-size: 1.25em;
+  border-bottom-color: var(--accent);
+  border-bottom-width: .15rem;
+  border-bottom-style: solid;
+  padding-bottom: 3px;
+}
 h4 {
   font-size: 1.44rem;
 }
